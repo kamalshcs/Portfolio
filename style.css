@@ -164,8 +164,22 @@ nav {
   }
 
   .nav-button::before {
-    content: "Menu"; 
+    content: url('images/logo.png');
   }
+
+  .nav-button::before {
+        content: ""; 
+        display: inline-block;
+        width: 60px;  
+        height: 60px;
+        margin-right: 8px;
+        
+        background-image: url('images/logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        vertical-align: middle;
+}
 
   .nav-links {
     display: none; /* Hide links by default on mobile */
@@ -182,7 +196,7 @@ nav {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.4rem;
     color:#fff;
     text-decoration-line: none;
   }
@@ -191,6 +205,11 @@ nav {
   .nav-toggle:checked ~ .nav-links {
     display: flex;
   }
+}
+
+.navbar-wrapper{
+    background-color: #00000087;
+    padding: 1% 7%;
 }
 
 .project-cards {
