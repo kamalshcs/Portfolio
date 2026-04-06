@@ -30,20 +30,14 @@ const projects = [
 ];
 
 const projectContainer = document.getElementById('project-list');
+const searchInput = document.getElementById('search-project');
 
-const projectCardHtml= projects.map((project) => {
-                            return `<article class="project-card-glass">
-                                        <div class="card-image-container">
-                                            <img class="card-images" src="${project.imageURL}" alt="Description of Projects">
-                                            <span class="category-badge">${project.badge}</span>
-                                        </div>
-                                        <div class="card-content">
-                                            <h3>${project.title}</h3>
-                                            <p>${project.description}</p>
-                                            <button type="button" class="view-project-btn">View Project</button>
-                                        </div>
-                                    </article>`;
-                        }).join('');
 
-projectContainer.innerHTML = projectCardHtml;
+searchInput.addEventListener('input', (e) => {
+    const inputString = e.target.value.toLowerCase();
+    console.log(inputString);
+})
+
+
+
 
