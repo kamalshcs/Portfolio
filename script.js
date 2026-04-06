@@ -33,12 +33,19 @@ const projectContainer = document.getElementById('project-list');
 
 const projectCard = `<article class="project-card-glass">
                         <div class="card-image-container">
-                            <img class="card-images" src="${projects.imageURL}" alt="Description of Projects">
-                            <span class="category-badge">${projects.badge}</span>
+                            <img class="card-images" src="${project.imageURL}" alt="Description of Projects">
+                            <span class="category-badge">${project.badge}</span>
                         </div>
                         <div class="card-content">
-                            <h3>${projects.title}</h3>
-                            <p>${projects.descriptions}</p>
+                            <h3>${project.title}</h3>
+                            <p>${project.descriptions}</p>
                             <button type="button" class="view-project-btn">View Project</button>
                         </div>
                     </article>`;
+
+projects.map((project) => {
+    return projectCard;
+}).join('');
+
+projectContainer.innerHTML = projectCard;
+
