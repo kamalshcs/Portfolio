@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
 
         
     </head>
@@ -46,31 +47,20 @@
             </section>
         </main>
 
-        <section class="project-cards">
-            <article class="project-card-glass">
-                <div class="card-image-container">
-                    <img class="card-images" src="images/card-image1.png" alt="Description of Project 1">
-                    <span class="category-badge">Web Design</span>
-                </div>
-                <div class="card-content">
-                    <h3>HR Dashboard</h3>
-                    <p>A responsive admin interface built with CSS Grid and accessible navigation components.</p>
-                    <button type="button" class="view-project-btn">View Project</button>
-                </div>
-            </article>
 
-            <article class="project-card-glass">
-                <div class="card-image-container">
-                    <img class="card-images" src="images/card-image2.png" alt="Description of Project 2">
-                    <span class="category-badge">Web Design</span>
-                </div>
-                <div class="card-content">
-                    <h3>HR Layout</h3>
-                    <p>A clean shopping experience featuring mobile-first design and optimized checkout flows.</p>
-                    <button type="button" class="view-project-btn">View Project</button>
-                </div>
-            </article>
-        </section>    
+        <section>
+            <p class="project-heading-text" style="text-align: center;">PROJECTS</p>  
+            <div class="search-container">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="search-project" class="search-projects" placeholder="Search projects...">
+            </div>  
+        </section>
+
+
+        <section id="project-list" class="project-cards"></section>    
         
     </body>
 </html>
