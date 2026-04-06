@@ -29,6 +29,8 @@ const projects = [
   }
 ];
 
+
+
 const projectContainer = document.getElementById('project-list');
 const searchInput = document.getElementById('search-project');
 
@@ -42,8 +44,11 @@ searchInput.addEventListener('input', (e) => {
     })
     console.log(filteredList);
     showProjects(filteredList);
-});
 
+    if(filteredList.length === 0){
+        projectContainer.innerHTML = `<p> No projects match the term "${inputString}".`;
+    }
+});
 
 
 function showProjects(filteredList){
@@ -62,8 +67,8 @@ function showProjects(filteredList){
     }).join('');
    
     projectContainer.innerHTML = updatedList;
-
 }
 
+showProjects(projects);
 
 
