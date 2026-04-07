@@ -3,11 +3,11 @@ let  projects = [];
 const projectContainer = document.getElementById('project-list');
 const searchInput = document.getElementById('search-project');
 
-fetch('https://github.com/kamalshcs/Portfolio/blob/main/data/projects.json')
+fetch('https://magnetikworks.github.io/project-data/data/projects.json')
     .then(response => response.json())
     .then(jsonData => {
         projects = jsonData; 
-        displayProjects(projects);
+        showProjects(projects);
         console.table(projects); 
     })
     .catch(error => {
