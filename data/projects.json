@@ -1,0 +1,27 @@
+[
+  {
+    "projectName": "Weather App",
+    "projectDescription": "Displays live weather using an API.",
+    "projectDate": "2023-01-10"
+  },
+  {
+    "projectName": "Message Counter",
+    "projectDescription": "Manage daily tasks with local storage.",
+    "projectDate": "2024-02-15"
+  },
+  {
+    "projectName": "Random Contact App",
+    "projectDescription": "Personal responsive portfolio website.",
+    "projectDate": "2025-09-01"
+  },
+  {
+    "projectName": "Expense Tracker",
+    "projectDescription": "Track expenses and visualize spending.",
+    "projectDate": "2026-01-20"
+  },
+  {
+    "projectName": "Travel Experiences",
+    "projectDescription": "Create bespoke Travel Experiences.",
+    "projectDate": "2026-02-14"
+  }
+]
