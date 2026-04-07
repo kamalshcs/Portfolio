@@ -21,7 +21,7 @@ searchInput.addEventListener('input', (e) => {
     console.log(inputString);
 
     const filteredList = projects.filter(project => {
-        return project.badge.toLowerCase().includes(inputString) || project.title.toLowerCase().includes(inputString) || project.description.toLowerCase().includes(searchInput)
+        return project.projectDate.toLowerCase().includes(inputString) || project.projectName.toLowerCase().includes(inputString) || project.projectDescription.toLowerCase().includes(searchInput)
     })
     console.log(filteredList);
     showProjects(filteredList);
@@ -37,7 +37,7 @@ function showProjects(filteredList){
         return `<article class="project-card-glass">
                     <div class="card-image-container">
                         <img class="card-images" src="${project.imageURL}" alt="Description of Projects">
-                        <span class="category-badge">${project.date}</span>
+                        <span class="category-badge">${project.projectDate}</span>
                     </div>
                     <div class="card-content">
                         <h3>${project.projectName}</h3>
